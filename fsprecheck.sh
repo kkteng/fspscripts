@@ -111,7 +111,7 @@ do
     destqtree=`echo $i | awk '{print $5}' | tr '[:upper:]' '[:lower:]'`
     destfilerip=`echo $i | awk '{print $6}' | tr '[:upper:]' '[:lower:]'`
     securitycluster=`cat /var/AppCom/etc/frame.AppCom.config | grep SEC-CLUSTER | awk -F": " '{print $2}'`
-    tstamp=`date +"%Y-%m-%d"`
+    tstamp=`date +"%Y%m%d%H%M"`
 	
     echo
     echo " ================================================================================================"
